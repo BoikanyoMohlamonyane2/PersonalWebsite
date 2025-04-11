@@ -23,7 +23,7 @@ export function Home() {
 
             <p className="hero-description">
               As a Full Stack Developer and A Computer
-              Science at Tshwane University of Technology, I am passionate about
+              Science Graduate at Tshwane University of Technology, I am passionate about
               leveraging my technical expertise to drive innovative solutions.
               With hands-on experience in both mobile and web development, and a
               background in competitive hacking events, I bring a strong
