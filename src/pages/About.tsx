@@ -10,6 +10,9 @@ export function About() {
     { name: "Java", level: 90 },
     { name: "Flask", level: 59 },
     { name: "Django", level: 55 },
+    { name: "Bootstrap", level: 47 },
+    { name: "Angular", level: 40 },
+    { name: "CSS", level: 85 },
   ];
 
   return (
