@@ -38,14 +38,6 @@ export function Home() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/contact"
-                className="button button-primary"
-              >
-                Contact me <ChevronRight size={20} />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
                 href="/cv.pdf"
                 download
                 className="button button-secondary"
