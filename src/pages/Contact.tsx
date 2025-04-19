@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 
@@ -12,28 +12,28 @@ export function Contact() {
 
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
 
-    if (!formRef.current) return;
+  if (!formRef.current) return;
 
-    emailjs
-      .sendForm(
-        "service_mvormrn", // Your service ID
-        "template_kg8yvil", // Your template ID
-        formRef.current, // Form reference
-        "C2lxoyveDBM6Ifz75" // Your public key
-      )
-      .then(() => {
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        console.error("Error sending message:", error);
-        alert("Failed to send message. Please try again later.");
-      });
-  };
-
+  emailjs
+    .sendForm(
+      "service_mvormrn", // ✅ Your service ID
+      "template_eimmpjm", // ✅ Your template ID
+      formRef.current, // ✅ Form reference
+      "C2lxoyveDBM6Ifz75" // ✅ Your public key
+    )
+    .then(() => {
+      alert("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" }); // clear form
+    })
+    .catch((error) => {
+      console.error("❌ Error sending message:", error);
+      alert("Failed to send message. Please try again later.");
+    });
+};
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">

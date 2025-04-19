@@ -114,7 +114,7 @@ export function Layout({ children }: LayoutProps) {
             </p>
             <div className="flex space-x-6">
               <a
-                href="https://github.com/BoikanyoMohlamonyane2/"
+                href="https://github.com/Boikanyo-Mohlamonyane"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -122,7 +122,7 @@ export function Layout({ children }: LayoutProps) {
                 <Github size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/boikanyo-mohlamonyane-719079237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                href="https://www.linkedin.com/in/boikanyo-mohlamonyane-719079237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -130,7 +130,7 @@ export function Layout({ children }: LayoutProps) {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:your.Boikanyokanyo481@gmail.com"
+                href="mailto:Boikanyokanyo481@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Mail size={20} />
